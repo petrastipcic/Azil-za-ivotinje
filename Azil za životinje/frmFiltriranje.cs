@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Azil_za_životinje
 {
-    public partial class frmUnosZivotinje : Form
+    public partial class frmFiltriranje : Form
     {
-        public frmUnosZivotinje()
+        public frmFiltriranje()
         {
             InitializeComponent();
-        }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
