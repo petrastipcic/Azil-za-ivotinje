@@ -26,5 +26,11 @@ namespace Azil_za_životinje
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string linija = textBox1.Text + ";" + textBox2.Text + ";" + textBox3.Text + ";" + textBox4.Text;
+            Admin.SpremiPodatke(linija);
+        }
     }
 }

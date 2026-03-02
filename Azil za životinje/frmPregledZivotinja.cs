@@ -16,5 +16,10 @@ namespace Azil_za_životinje
         {
             InitializeComponent();
         }
+
+        private void frmPregledZivotinja_Load(object sender, EventArgs e)
+        {
+            listBox1.DataSource = Admin.UcitajPodatke();
+        }
     }
 }

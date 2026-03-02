@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.cs" />
     <Compile Include="frmFiltriranje.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,8 +85,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmFiltriranje.resx">
+      <DependentUpon>frmFiltriranje.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPocetna.resx">
       <DependentUpon>frmPocetna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPregledZivotinja.resx">
+      <DependentUpon>frmPregledZivotinja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUnosZivotinje.resx">
       <DependentUpon>frmUnosZivotinje.cs</DependentUpon>
