@@ -19,7 +19,7 @@ namespace Azil_za_životinje
 
         private void frmPregledZivotinja_Load(object sender, EventArgs e)
         {
-            listBox1.DataSource = Admin.UcitajPodatke();
+            ListaŽivotinja.DataSource = Admin.UcitajPodatke();
         }
     }
 }
