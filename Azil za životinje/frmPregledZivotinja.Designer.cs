@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.ListaŽivotinja = new System.Windows.Forms.ListBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pbZivotinja = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbZivotinja)).BeginInit();
             this.SuspendLayout();
             // 
             // ListaŽivotinja
@@ -41,25 +41,25 @@
             this.ListaŽivotinja.Size = new System.Drawing.Size(203, 407);
             this.ListaŽivotinja.TabIndex = 0;
             // 
-            // pictureBox1
+            // pbZivotinja
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(221, 62);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(326, 301);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.pbZivotinja.Location = new System.Drawing.Point(221, 62);
+            this.pbZivotinja.Name = "pbZivotinja";
+            this.pbZivotinja.Size = new System.Drawing.Size(326, 301);
+            this.pbZivotinja.TabIndex = 1;
+            this.pbZivotinja.TabStop = false;
             // 
             // frmPregledZivotinja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbZivotinja);
             this.Controls.Add(this.ListaŽivotinja);
             this.Name = "frmPregledZivotinja";
             this.Text = "frmPregledZivotinja";
             this.Load += new System.EventHandler(this.frmPregledZivotinja_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbZivotinja)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -67,6 +67,6 @@
         #endregion
 
         private System.Windows.Forms.ListBox ListaŽivotinja;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbZivotinja;
     }
 }

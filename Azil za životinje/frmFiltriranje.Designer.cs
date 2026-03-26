@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbFiltriranje = new System.Windows.Forms.ComboBox();
             this.ListaŽivotinja = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnResetFiltera = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // cbFiltriranje
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 12);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(232, 21);
-            this.comboBox1.TabIndex = 0;
+            this.cbFiltriranje.FormattingEnabled = true;
+            this.cbFiltriranje.Location = new System.Drawing.Point(12, 12);
+            this.cbFiltriranje.Name = "cbFiltriranje";
+            this.cbFiltriranje.Size = new System.Drawing.Size(232, 21);
+            this.cbFiltriranje.TabIndex = 0;
             // 
             // ListaŽivotinja
             // 
@@ -49,23 +49,23 @@
             this.ListaŽivotinja.Size = new System.Drawing.Size(232, 199);
             this.ListaŽivotinja.TabIndex = 2;
             // 
-            // button1
+            // btnResetFiltera
             // 
-            this.button1.Location = new System.Drawing.Point(84, 244);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Reset filtera";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnResetFiltera.Location = new System.Drawing.Point(84, 244);
+            this.btnResetFiltera.Name = "btnResetFiltera";
+            this.btnResetFiltera.Size = new System.Drawing.Size(75, 23);
+            this.btnResetFiltera.TabIndex = 3;
+            this.btnResetFiltera.Text = "Reset filtera";
+            this.btnResetFiltera.UseVisualStyleBackColor = true;
             // 
             // frmFiltriranje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnResetFiltera);
             this.Controls.Add(this.ListaŽivotinja);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbFiltriranje);
             this.Name = "frmFiltriranje";
             this.Text = "frmFiltriranje";
             this.ResumeLayout(false);
@@ -74,8 +74,8 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbFiltriranje;
         private System.Windows.Forms.ListBox ListaŽivotinja;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnResetFiltera;
     }
 }
