@@ -14,8 +14,8 @@ namespace Azil_za_životinje
         {
             foreach (var z in lista)
             {
-                string red = $"{z.ID}|{z.Ime}|{z.Vrsta}|{z.Pasmina}|{z.Spol}|{z.Dob}|{z.Status}|{z.PutanjaSlike}|{z.DatumDolaska}|{z.DatumUdomljavanja}|{z.Cijepljen}|{z.Kastriran}|{z.Napomena}|{z.Udomitelj}|{z.Kontakt}";
-                File.AppendAllText(putanja, red + Environment.NewLine);
+                    string red = $"{z.ID}|{z.Ime}|{z.Vrsta}|{z.Pasmina}|{z.Spol}|{z.Dob}|{z.Status}|{z.PutanjaSlike}|{z.DatumDolaska}|{z.DatumUdomljavanja}|{z.Cijepljen}|{z.Kastriran}|{z.Napomena}|{z.Udomitelj}|{z.Kontakt}";
+                    File.AppendAllText(putanja, red + Environment.NewLine);
             }
         }
 

@@ -23,7 +23,8 @@ namespace Azil_za_životinje
             lista = Datoteka.UcitajSve();
             cbFilter.Items.Add("Pas");
             cbFilter.Items.Add("Mačka");
-            cbFilter.Items.Add("U azilu");
+            cbFilter.Items.Add("U azilu-bez zdravstvenih poteškoća");
+            cbFilter.Items.Add("U azilu-ima zdravstvene poteškoće");
             cbFilter.Items.Add("Udomljen/a");
 
         }
@@ -34,7 +35,7 @@ namespace Azil_za_životinje
             string filter = cbFilter.Text;
             foreach (var z in lista)
             {
-                if (z.Vrsta == filter || z.Status.StartsWith("U azilu"))
+                if (z.Vrsta == filter || z.Status == filter)
                 {
                     lbRezultati.Items.Add(z.Ime + " (" + z.Vrsta + ")");
 

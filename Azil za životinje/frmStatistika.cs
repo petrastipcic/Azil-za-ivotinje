@@ -26,7 +26,7 @@ namespace Azil_za_životinje
             int brojUAzilu = 0;
             foreach (var z in lista)
             {
-                if (z.Status == "U azilu")
+                if (z.Status.StartsWith("U azilu"))
                     brojUAzilu++;
             }
             lblTrenutnoUAzilu.Text = brojUAzilu.ToString();

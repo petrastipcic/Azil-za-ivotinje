@@ -89,7 +89,7 @@
             // lblProsjecnaDob
             // 
             this.lblProsjecnaDob.AutoSize = true;
-            this.lblProsjecnaDob.Location = new System.Drawing.Point(168, 126);
+            this.lblProsjecnaDob.Location = new System.Drawing.Point(183, 126);
             this.lblProsjecnaDob.Name = "lblProsjecnaDob";
             this.lblProsjecnaDob.Size = new System.Drawing.Size(13, 16);
             this.lblProsjecnaDob.TabIndex = 5;
@@ -98,7 +98,7 @@
             // lblUdomljene
             // 
             this.lblUdomljene.AutoSize = true;
-            this.lblUdomljene.Location = new System.Drawing.Point(168, 87);
+            this.lblUdomljene.Location = new System.Drawing.Point(183, 87);
             this.lblUdomljene.Name = "lblUdomljene";
             this.lblUdomljene.Size = new System.Drawing.Size(13, 16);
             this.lblUdomljene.TabIndex = 6;
@@ -107,7 +107,7 @@
             // lblTrenutnoUAzilu
             // 
             this.lblTrenutnoUAzilu.AutoSize = true;
-            this.lblTrenutnoUAzilu.Location = new System.Drawing.Point(202, 49);
+            this.lblTrenutnoUAzilu.Location = new System.Drawing.Point(214, 49);
             this.lblTrenutnoUAzilu.Name = "lblTrenutnoUAzilu";
             this.lblTrenutnoUAzilu.Size = new System.Drawing.Size(13, 16);
             this.lblTrenutnoUAzilu.TabIndex = 7;
@@ -116,7 +116,7 @@
             // lblUkupno
             // 
             this.lblUkupno.AutoSize = true;
-            this.lblUkupno.Location = new System.Drawing.Point(149, 9);
+            this.lblUkupno.Location = new System.Drawing.Point(168, 9);
             this.lblUkupno.Name = "lblUkupno";
             this.lblUkupno.Size = new System.Drawing.Size(13, 16);
             this.lblUkupno.TabIndex = 8;

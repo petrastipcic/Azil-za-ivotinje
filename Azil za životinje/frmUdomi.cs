@@ -84,10 +84,14 @@ namespace Azil_za_životinje
                 return;
             }
 
+            if (string.IsNullOrWhiteSpace(txtUdomitelj.Text) || string.IsNullOrWhiteSpace(txtKontakt.Text))
+            {
+                MessageBox.Show("Unesite ime udomitelja i kontakt!");
+                return;
+            }
+
             //Zivotinja z = (Zivotinja)lbZivotinje.SelectedItem;
             Zivotinja odabrana = (Zivotinja)lbZivotinje.SelectedItem;
-
-            List<Zivotinja> lista = Datoteka.UcitajSve();
 
             foreach (var z in lista)
             {
@@ -102,10 +106,11 @@ namespace Azil_za_životinje
 
             Datoteka.SpremiSve(lista);
             MessageBox.Show("Životinja je uspješno udomljena!");
+            dtpDatumUdomljavanja.Value = DateTime.Today;
+            txtUdomitelj.Clear();
+            txtKontakt.Clear();
             UcitajZivotinje();
-                dtpDatumUdomljavanja.Value = DateTime.Today;
-                txtUdomitelj.Clear();
-                txtKontakt.Clear();
+               
 
 
             //if (string.IsNullOrWhiteSpace(txtUdomitelj.Text) || string.IsNullOrWhiteSpace(txtKontakt.Text)) 
