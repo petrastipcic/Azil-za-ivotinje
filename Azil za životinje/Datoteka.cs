@@ -12,10 +12,14 @@ namespace Azil_za_životinje
         private static string putanja = "zivotinje.txt";
         public static void SpremiSve(List<Zivotinja> lista)
         {
-            foreach (var z in lista)
+            string putanja = "zivotinje.txt";
+            using (StreamWriter sw = new StreamWriter(putanja, false))
             {
+                foreach (var z in lista)
+                {
                     string red = $"{z.ID}|{z.Ime}|{z.Vrsta}|{z.Pasmina}|{z.Spol}|{z.Dob}|{z.Status}|{z.PutanjaSlike}|{z.DatumDolaska}|{z.DatumUdomljavanja}|{z.Cijepljen}|{z.Kastriran}|{z.Napomena}|{z.Udomitelj}|{z.Kontakt}";
-                    File.AppendAllText(putanja, red + Environment.NewLine);
+                    sw.WriteLine(red);
+                }
             }
         }
 
@@ -50,7 +54,6 @@ namespace Azil_za_životinje
                     Napomena = p[12],
                     Udomitelj = p[13],
                     Kontakt = p[14]
-
                 };
                 lista.Add(z);
             }

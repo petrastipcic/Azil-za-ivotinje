@@ -16,7 +16,7 @@ namespace Azil_za_životinje
         {
             InitializeComponent();
         }
-        List<Zivotinja> lista;
+        private List<Zivotinja> lista;
 
 
         private void frmUdomi_Load(object sender, EventArgs e)
@@ -30,14 +30,15 @@ namespace Azil_za_životinje
             //if (z.Status.StartsWith( "U azilu"))
             // lbZivotinje.Items.Add(z);
             //}
+            lista = Datoteka.UcitajSve();
             UcitajZivotinje();
+            dtpDatumUdomljavanja.Value = DateTime.Today;
 
         }
 
         private void UcitajZivotinje()
         {
             lbZivotinje.Items.Clear();
-            lista = Datoteka.UcitajSve();
             foreach (var z in lista)
             {
                 if (z.Status.StartsWith("U azilu"))
@@ -104,12 +105,14 @@ namespace Azil_za_životinje
                 }
             }
 
+            //Datoteka.SpremiSve(lista);
             Datoteka.SpremiSve(lista);
             MessageBox.Show("Životinja je uspješno udomljena!");
-            dtpDatumUdomljavanja.Value = DateTime.Today;
-            txtUdomitelj.Clear();
-            txtKontakt.Clear();
-            UcitajZivotinje();
+            this.Close();
+            //dtpDatumUdomljavanja.Value = DateTime.Today;
+            //txtUdomitelj.Clear();
+            //txtKontakt.Clear();
+            //UcitajZivotinje();
                
 
 
