@@ -273,8 +273,8 @@
             // 
             this.cbStatus.FormattingEnabled = true;
             this.cbStatus.Items.AddRange(new object[] {
-            "U azilu",
-            "Udomljen/a"});
+            "U azilu-bez zdravstvenih poteškoća",
+            "U azilu-ima zdravstvene poteškoće"});
             this.cbStatus.Location = new System.Drawing.Point(78, 220);
             this.cbStatus.Name = "cbStatus";
             this.cbStatus.Size = new System.Drawing.Size(215, 24);
@@ -286,9 +286,9 @@
             // 
             // btnPovratak
             // 
-            this.btnPovratak.Location = new System.Drawing.Point(640, 391);
+            this.btnPovratak.Location = new System.Drawing.Point(619, 391);
             this.btnPovratak.Name = "btnPovratak";
-            this.btnPovratak.Size = new System.Drawing.Size(75, 23);
+            this.btnPovratak.Size = new System.Drawing.Size(96, 23);
             this.btnPovratak.TabIndex = 25;
             this.btnPovratak.Text = "Povratak";
             this.btnPovratak.UseVisualStyleBackColor = true;

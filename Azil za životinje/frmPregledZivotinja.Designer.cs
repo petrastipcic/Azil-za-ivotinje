@@ -44,22 +44,23 @@
             this.lbZivotinje.ItemHeight = 16;
             this.lbZivotinje.Location = new System.Drawing.Point(12, 28);
             this.lbZivotinje.Name = "lbZivotinje";
-            this.lbZivotinje.Size = new System.Drawing.Size(401, 500);
+            this.lbZivotinje.Size = new System.Drawing.Size(370, 500);
             this.lbZivotinje.TabIndex = 0;
             this.lbZivotinje.SelectedIndexChanged += new System.EventHandler(this.lbZivotinje_SelectedIndexChanged);
             // 
             // pbSlika
             // 
-            this.pbSlika.Location = new System.Drawing.Point(419, 28);
+            this.pbSlika.Location = new System.Drawing.Point(388, 33);
             this.pbSlika.Name = "pbSlika";
             this.pbSlika.Size = new System.Drawing.Size(353, 495);
+            this.pbSlika.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbSlika.TabIndex = 1;
             this.pbSlika.TabStop = false;
             // 
             // lblDetalji
             // 
             this.lblDetalji.AutoSize = true;
-            this.lblDetalji.Location = new System.Drawing.Point(775, 9);
+            this.lblDetalji.Location = new System.Drawing.Point(744, 9);
             this.lblDetalji.Name = "lblDetalji";
             this.lblDetalji.Size = new System.Drawing.Size(45, 16);
             this.lblDetalji.TabIndex = 2;
@@ -68,7 +69,7 @@
             // lblSlika
             // 
             this.lblSlika.AutoSize = true;
-            this.lblSlika.Location = new System.Drawing.Point(416, 9);
+            this.lblSlika.Location = new System.Drawing.Point(385, 9);
             this.lblSlika.Name = "lblSlika";
             this.lblSlika.Size = new System.Drawing.Size(37, 16);
             this.lblSlika.TabIndex = 3;
@@ -85,7 +86,7 @@
             // 
             // txtDetalji
             // 
-            this.txtDetalji.Location = new System.Drawing.Point(778, 28);
+            this.txtDetalji.Location = new System.Drawing.Point(747, 33);
             this.txtDetalji.Multiline = true;
             this.txtDetalji.Name = "txtDetalji";
             this.txtDetalji.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -94,9 +95,9 @@
             // 
             // btnPovratak
             // 
-            this.btnPovratak.Location = new System.Drawing.Point(1168, 500);
+            this.btnPovratak.Location = new System.Drawing.Point(1137, 500);
             this.btnPovratak.Name = "btnPovratak";
-            this.btnPovratak.Size = new System.Drawing.Size(75, 23);
+            this.btnPovratak.Size = new System.Drawing.Size(84, 23);
             this.btnPovratak.TabIndex = 6;
             this.btnPovratak.Text = "Povratak";
             this.btnPovratak.UseVisualStyleBackColor = true;

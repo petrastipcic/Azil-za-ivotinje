@@ -19,11 +19,13 @@ namespace Azil_za_životinje
 
         private void frmUdomi_Load(object sender, EventArgs e)
         {
+            dtpDatumUdomljavanja.Value = DateTime.Now;
+
             lbZivotinje.Items.Clear();
             List<Zivotinja> lista = Datoteka.UcitajSve();
             foreach (var z in lista)
             {
-                if (z.Status == "U azilu")
+                if (z.Status.StartsWith( "U azilu"))
                     lbZivotinje.Items.Add(z);
             }
         }
@@ -64,25 +66,32 @@ namespace Azil_za_životinje
             z.DatumUdomljavanja = dtpDatumUdomljavanja.Value;
 
             List<Zivotinja> lista = Datoteka.UcitajSve();
-            for (int i = 0; i < lista.Count; i++)
+            foreach (var item in lista)
             {
-                if (lista[i].ID == z.ID)
+                if (item.ID == z.ID)
                 {
-                    lista[i] = z;
+                    item.Status = z.Status;
+                    item.Udomitelj = z.Udomitelj;
+                    item.Kontakt = z.Kontakt;
+                    item.DatumUdomljavanja = z.DatumUdomljavanja;
                 }
             }
-            foreach (var zivotinja in lista)
+            foreach (var item in lista)
             {
-                Datoteka.Spremi(zivotinja);
+                Datoteka.Spremi(item);
             }
             MessageBox.Show("Životinja je uspješno udomljena!");
 
             lbZivotinje.Items.Clear();
             foreach (var item in lista)
             {
-                if (item.Status == "U azilu")
+                if (item.Status.StartsWith("U azilu"))
                     lbZivotinje.Items.Add(item);
             }
+
+            dtpDatumUdomljavanja.Value = DateTime.Now;
+            txtUdomitelj.Clear();
+            txtKontakt.Clear();
         }
 
         private void btnPovratak_Click(object sender, EventArgs e)

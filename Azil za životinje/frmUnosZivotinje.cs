@@ -22,14 +22,34 @@ namespace Azil_za_životinje
 
         private void btnOdaberiSliku_Click(object sender, EventArgs e)
         {
-            
-                if (OpenFileDialog.ShowDialog() == DialogResult.OK)
-                {
-                    putanjaSlike = OpenFileDialog.FileName;
-                    pbOdabir.SizeMode = PictureBoxSizeMode.StretchImage;
-                    pbOdabir.ImageLocation = putanjaSlike;
 
+            // if (OpenFileDialog.ShowDialog() == DialogResult.OK)
+            // {
+            // putanjaSlike = OpenFileDialog.FileName;
+            // pbOdabir.SizeMode = PictureBoxSizeMode.StretchImage;
+            // pbOdabir.ImageLocation = putanjaSlike;
+
+            // }
+
+            if (OpenFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                putanjaSlike = OpenFileDialog.FileName;
+                try
+                {
+                    using (var imgTemp = Image.FromFile(putanjaSlike))
+                    {
+                        pbOdabir.Image = new Bitmap(imgTemp);
+                    }
+                    pbOdabir.SizeMode = PictureBoxSizeMode.StretchImage;
                 }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Greška pri učitavanju slike! Molimo Vas da odaberete sliku .jpg formata! ");
+                    putanjaSlike = "";
+                    pbOdabir.Image = null;
+                }
+            }
+
         }
 
         private void btnSpremi_Click(object sender, EventArgs e)

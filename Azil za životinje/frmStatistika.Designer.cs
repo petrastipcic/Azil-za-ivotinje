@@ -133,9 +133,9 @@
             // 
             // btnPovratak
             // 
-            this.btnPovratak.Location = new System.Drawing.Point(419, 504);
+            this.btnPovratak.Location = new System.Drawing.Point(404, 504);
             this.btnPovratak.Name = "btnPovratak";
-            this.btnPovratak.Size = new System.Drawing.Size(75, 23);
+            this.btnPovratak.Size = new System.Drawing.Size(90, 23);
             this.btnPovratak.TabIndex = 10;
             this.btnPovratak.Text = "Povratak";
             this.btnPovratak.UseVisualStyleBackColor = true;

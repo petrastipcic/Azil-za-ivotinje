@@ -24,5 +24,10 @@ namespace Azil_za_životinje
         public string Udomitelj {  get; set; }
         public string Kontakt {  get; set; }
 
+        public override string ToString()
+        {
+            return $"{ID}-{Ime} ({Vrsta})";
+        }
+
     }
 }

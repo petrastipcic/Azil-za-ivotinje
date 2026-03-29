@@ -53,7 +53,7 @@ namespace Azil_za_životinje
                     "Dob: " + z.Dob + Environment.NewLine +
                     "Status: " + z.Status + Environment.NewLine +
                     "Datum dolaska: " + z.DatumDolaska.ToShortDateString() + Environment.NewLine +
-                    "Datum udomljavanja: " + (z.DatumUdomljavanja == DateTime.MinValue ? "Nije udomljen" : z.DatumUdomljavanja.ToShortDateString()) + Environment.NewLine +
+                    "Datum udomljavanja: " + (z.DatumUdomljavanja == DateTime.MinValue ? "/" : z.DatumUdomljavanja.ToShortDateString()) + Environment.NewLine +
                     "Cijepljen: " + (z.Cijepljen ? "Da" : "Ne") + Environment.NewLine +
                     "Kastriran: " + (z.Kastriran ? "Da" : "Ne") + Environment.NewLine +
                     "Napomena: " + z.Napomena + Environment.NewLine +
