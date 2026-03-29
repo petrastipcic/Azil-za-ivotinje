@@ -10,10 +10,13 @@ namespace Azil_za_životinje
     public static class Datoteka
     {
         private static string putanja = "zivotinje.txt";
-        public static void Spremi(Zivotinja z)
+        public static void Spremi(List<Zivotinja> lista)
         {
-            string red = $"{z.ID}|{z.Ime}|{z.Vrsta}|{z.Pasmina}|{z.Spol}|{z.Dob}|{z.Status}|{z.PutanjaSlike}|{z.DatumDolaska}|{z.DatumUdomljavanja}|{z.Cijepljen}|{z.Kastriran}|{z.Napomena}|{z.Udomitelj}|{z.Kontakt}";
-            File.AppendAllText(putanja, red + Environment.NewLine);
+            foreach (var z in lista)
+            {
+                string red = $"{z.ID}|{z.Ime}|{z.Vrsta}|{z.Pasmina}|{z.Spol}|{z.Dob}|{z.Status}|{z.PutanjaSlike}|{z.DatumDolaska}|{z.DatumUdomljavanja}|{z.Cijepljen}|{z.Kastriran}|{z.Napomena}|{z.Udomitelj}|{z.Kontakt}";
+                File.AppendAllText(putanja, red + Environment.NewLine);
+            }
         }
         public static List<Zivotinja> UcitajSve()
         {
