@@ -16,21 +16,50 @@ namespace Azil_za_životinje
         {
             InitializeComponent();
         }
+        string putanjaSlike = "";
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        private void btnOdaberiSliku_Click(object sender, EventArgs e)
         {
+            if(OpenFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                putanjaSlike = OpenFileDialog.FileName;
+                pbOdabir.ImageLocation = putanjaSlike;
 
+            }
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void btnSpremi_Click(object sender, EventArgs e)
         {
+            Zivotinja z = new Zivotinja();
+            z.ID = txtID.Text;
+            z.Ime = txtIme.Text;
+            z.Vrsta = txtVrsta.Text;
+            z.Pasmina = txtPasmina.Text;
+            if (rbM.Checked)
+                z.Spol = "M";
+            else if (rbZ.Checked)
+                z.Spol = "Ž";
+            z.Dob = (int)nudDob.Value;
+            z.Status = cbStatus.Text;
+            z.PutanjaSlike = putanjaSlike;
+            z.DatumDolaska = dtpDatumDolaska.Value;
+            z.DatumUdomljavanja = DateTime.MinValue;
+            z.Cijepljen = cbCijepljen.Checked;
+            z.Kastriran = cbKastriran.Checked;
+            z.Napomena = txtNapomena.Text;
+            z.Udomitelj = "";
+            z.Kontakt = "";
 
-        }
+            Datoteka.Spremi(z);
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            string linija = txtIme.Text + ";" + txtVrsta.Text + ";" + txtPasmina.Text + ";" + txtNapomena.Text;
-            Admin.SpremiPodatke(linija);
+            MessageBox.Show("Životinja spremljena!");
+
+            txtIme.Clear();
+            txtVrsta.Clear();
+            txtPasmina.Clear();
+            txtNapomena.Clear();
+            pbOdabir.Image = null;
+
         }
     }
 }
