@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+
 
 namespace Azil_za_životinje
 {
@@ -16,16 +18,18 @@ namespace Azil_za_životinje
         {
             InitializeComponent();
         }
-        string putanjaSlike = "";
+        private string putanjaSlike = "";
 
         private void btnOdaberiSliku_Click(object sender, EventArgs e)
         {
-            if(OpenFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                putanjaSlike = OpenFileDialog.FileName;
-                pbOdabir.ImageLocation = putanjaSlike;
+            
+                if (OpenFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    putanjaSlike = OpenFileDialog.FileName;
+                    pbOdabir.SizeMode = PictureBoxSizeMode.StretchImage;
+                    pbOdabir.ImageLocation = putanjaSlike;
 
-            }
+                }
         }
 
         private void btnSpremi_Click(object sender, EventArgs e)
@@ -54,9 +58,17 @@ namespace Azil_za_životinje
 
             MessageBox.Show("Životinja spremljena!");
 
+            txtID.Clear();
             txtIme.Clear();
             txtVrsta.Clear();
             txtPasmina.Clear();
+            rbM.Checked = false;
+            rbZ.Checked = false;
+            nudDob.Value = 0;
+            cbStatus.Text = null;
+            dtpDatumDolaska.Value = DateTime.Now;
+            cbCijepljen.Checked = false;
+            cbKastriran.Checked = false;
             txtNapomena.Clear();
             pbOdabir.Image = null;
 

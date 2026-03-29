@@ -244,6 +244,7 @@
             this.pbOdabir.Location = new System.Drawing.Point(361, 28);
             this.pbOdabir.Name = "pbOdabir";
             this.pbOdabir.Size = new System.Drawing.Size(328, 294);
+            this.pbOdabir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbOdabir.TabIndex = 21;
             this.pbOdabir.TabStop = false;
             // 
@@ -280,7 +281,7 @@
             // 
             // OpenFileDialog
             // 
-            this.OpenFileDialog.FileName = "openFileDialog1";
+            this.OpenFileDialog.FileName = "OpenFileDialog";
             // 
             // frmUnosZivotinje
             // 
