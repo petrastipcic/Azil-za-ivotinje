@@ -38,6 +38,7 @@
             this.txtKontakt = new System.Windows.Forms.TextBox();
             this.btnUdomi = new System.Windows.Forms.Button();
             this.pbOdabrana = new System.Windows.Forms.PictureBox();
+            this.btnPovratak = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbOdabrana)).BeginInit();
             this.SuspendLayout();
             // 
@@ -127,11 +128,22 @@
             this.pbOdabrana.TabIndex = 9;
             this.pbOdabrana.TabStop = false;
             // 
+            // btnPovratak
+            // 
+            this.btnPovratak.Location = new System.Drawing.Point(855, 489);
+            this.btnPovratak.Name = "btnPovratak";
+            this.btnPovratak.Size = new System.Drawing.Size(75, 23);
+            this.btnPovratak.TabIndex = 10;
+            this.btnPovratak.Text = "Povratak";
+            this.btnPovratak.UseVisualStyleBackColor = true;
+            this.btnPovratak.Click += new System.EventHandler(this.btnPovratak_Click);
+            // 
             // frmUdomi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(942, 525);
+            this.Controls.Add(this.btnPovratak);
             this.Controls.Add(this.pbOdabrana);
             this.Controls.Add(this.btnUdomi);
             this.Controls.Add(this.txtKontakt);
@@ -163,5 +175,6 @@
         private System.Windows.Forms.TextBox txtKontakt;
         private System.Windows.Forms.Button btnUdomi;
         private System.Windows.Forms.PictureBox pbOdabrana;
+        private System.Windows.Forms.Button btnPovratak;
     }
 }

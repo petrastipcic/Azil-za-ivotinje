@@ -38,6 +38,7 @@
             this.lblTrenutnoUAzilu = new System.Windows.Forms.Label();
             this.lblUkupno = new System.Windows.Forms.Label();
             this.lbVrste = new System.Windows.Forms.ListBox();
+            this.btnPovratak = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -130,11 +131,22 @@
             this.lbVrste.Size = new System.Drawing.Size(190, 276);
             this.lbVrste.TabIndex = 9;
             // 
+            // btnPovratak
+            // 
+            this.btnPovratak.Location = new System.Drawing.Point(419, 504);
+            this.btnPovratak.Name = "btnPovratak";
+            this.btnPovratak.Size = new System.Drawing.Size(75, 23);
+            this.btnPovratak.TabIndex = 10;
+            this.btnPovratak.Text = "Povratak";
+            this.btnPovratak.UseVisualStyleBackColor = true;
+            this.btnPovratak.Click += new System.EventHandler(this.btnPovratak_Click);
+            // 
             // frmStatistika
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 539);
+            this.ClientSize = new System.Drawing.Size(506, 539);
+            this.Controls.Add(this.btnPovratak);
             this.Controls.Add(this.lbVrste);
             this.Controls.Add(this.lblUkupno);
             this.Controls.Add(this.lblTrenutnoUAzilu);
@@ -165,5 +177,6 @@
         private System.Windows.Forms.Label lblTrenutnoUAzilu;
         private System.Windows.Forms.Label lblUkupno;
         private System.Windows.Forms.ListBox lbVrste;
+        private System.Windows.Forms.Button btnPovratak;
     }
 }

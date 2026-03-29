@@ -34,6 +34,7 @@
             this.lblSlika = new System.Windows.Forms.Label();
             this.lblListaZivotinja = new System.Windows.Forms.Label();
             this.txtDetalji = new System.Windows.Forms.TextBox();
+            this.btnPovratak = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbSlika)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,14 +89,25 @@
             this.txtDetalji.Multiline = true;
             this.txtDetalji.Name = "txtDetalji";
             this.txtDetalji.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtDetalji.Size = new System.Drawing.Size(421, 495);
+            this.txtDetalji.Size = new System.Drawing.Size(384, 495);
             this.txtDetalji.TabIndex = 5;
+            // 
+            // btnPovratak
+            // 
+            this.btnPovratak.Location = new System.Drawing.Point(1168, 500);
+            this.btnPovratak.Name = "btnPovratak";
+            this.btnPovratak.Size = new System.Drawing.Size(75, 23);
+            this.btnPovratak.TabIndex = 6;
+            this.btnPovratak.Text = "Povratak";
+            this.btnPovratak.UseVisualStyleBackColor = true;
+            this.btnPovratak.Click += new System.EventHandler(this.btnPovratak_Click);
             // 
             // frmPregledZivotinja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1211, 535);
+            this.ClientSize = new System.Drawing.Size(1252, 535);
+            this.Controls.Add(this.btnPovratak);
             this.Controls.Add(this.txtDetalji);
             this.Controls.Add(this.lblListaZivotinja);
             this.Controls.Add(this.lblSlika);
@@ -119,5 +131,6 @@
         private System.Windows.Forms.Label lblSlika;
         private System.Windows.Forms.Label lblListaZivotinja;
         private System.Windows.Forms.TextBox txtDetalji;
+        private System.Windows.Forms.Button btnPovratak;
     }
 }

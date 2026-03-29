@@ -33,6 +33,7 @@
             this.btnFiltriraj = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnPovratak = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cbFilter
@@ -82,11 +83,22 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Odaberi filter";
             // 
+            // btnPovratak
+            // 
+            this.btnPovratak.Location = new System.Drawing.Point(487, 506);
+            this.btnPovratak.Name = "btnPovratak";
+            this.btnPovratak.Size = new System.Drawing.Size(75, 23);
+            this.btnPovratak.TabIndex = 5;
+            this.btnPovratak.Text = "Povratak";
+            this.btnPovratak.UseVisualStyleBackColor = true;
+            this.btnPovratak.Click += new System.EventHandler(this.btnPovratak_Click);
+            // 
             // frmFiltriranje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(934, 541);
+            this.ClientSize = new System.Drawing.Size(574, 541);
+            this.Controls.Add(this.btnPovratak);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnFiltriraj);
@@ -107,5 +119,6 @@
         private System.Windows.Forms.Button btnFiltriraj;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnPovratak;
     }
 }

@@ -39,62 +39,68 @@
             // btnUnosZivotinje
             // 
             this.btnUnosZivotinje.Location = new System.Drawing.Point(16, 15);
-            this.btnUnosZivotinje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUnosZivotinje.Margin = new System.Windows.Forms.Padding(4);
             this.btnUnosZivotinje.Name = "btnUnosZivotinje";
             this.btnUnosZivotinje.Size = new System.Drawing.Size(120, 28);
             this.btnUnosZivotinje.TabIndex = 0;
             this.btnUnosZivotinje.Text = "Unos životinje";
             this.btnUnosZivotinje.UseVisualStyleBackColor = true;
+            this.btnUnosZivotinje.Click += new System.EventHandler(this.btnUnosZivotinje_Click);
             // 
             // btnPregled
             // 
             this.btnPregled.Location = new System.Drawing.Point(16, 50);
-            this.btnPregled.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPregled.Margin = new System.Windows.Forms.Padding(4);
             this.btnPregled.Name = "btnPregled";
             this.btnPregled.Size = new System.Drawing.Size(120, 28);
             this.btnPregled.TabIndex = 1;
             this.btnPregled.Text = "Pregled";
             this.btnPregled.UseVisualStyleBackColor = true;
+            this.btnPregled.Click += new System.EventHandler(this.btnPregled_Click);
             // 
             // btnFiltriranje
             // 
             this.btnFiltriranje.Location = new System.Drawing.Point(16, 86);
-            this.btnFiltriranje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFiltriranje.Margin = new System.Windows.Forms.Padding(4);
             this.btnFiltriranje.Name = "btnFiltriranje";
             this.btnFiltriranje.Size = new System.Drawing.Size(120, 28);
             this.btnFiltriranje.TabIndex = 2;
             this.btnFiltriranje.Text = "Filtriranje";
             this.btnFiltriranje.UseVisualStyleBackColor = true;
+            this.btnFiltriranje.Click += new System.EventHandler(this.btnFiltriranje_Click);
             // 
             // btnUdomljavanje
             // 
             this.btnUdomljavanje.Location = new System.Drawing.Point(16, 122);
-            this.btnUdomljavanje.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUdomljavanje.Margin = new System.Windows.Forms.Padding(4);
             this.btnUdomljavanje.Name = "btnUdomljavanje";
             this.btnUdomljavanje.Size = new System.Drawing.Size(120, 28);
             this.btnUdomljavanje.TabIndex = 3;
             this.btnUdomljavanje.Text = "Udomljavanje";
             this.btnUdomljavanje.UseVisualStyleBackColor = true;
+            this.btnUdomljavanje.Click += new System.EventHandler(this.btnUdomljavanje_Click);
             // 
             // btnStatistika
             // 
             this.btnStatistika.Location = new System.Drawing.Point(16, 158);
-            this.btnStatistika.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnStatistika.Margin = new System.Windows.Forms.Padding(4);
             this.btnStatistika.Name = "btnStatistika";
             this.btnStatistika.Size = new System.Drawing.Size(120, 28);
             this.btnStatistika.TabIndex = 4;
             this.btnStatistika.Text = "Statistika";
             this.btnStatistika.UseVisualStyleBackColor = true;
+            this.btnStatistika.Click += new System.EventHandler(this.btnStatistika_Click);
             // 
             // btnIzlaz
             // 
             this.btnIzlaz.Location = new System.Drawing.Point(16, 193);
-            this.btnIzlaz.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIzlaz.Margin = new System.Windows.Forms.Padding(4);
             this.btnIzlaz.Name = "btnIzlaz";
             this.btnIzlaz.Size = new System.Drawing.Size(120, 28);
             this.btnIzlaz.TabIndex = 5;
             this.btnIzlaz.Text = "Izlaz";
             this.btnIzlaz.UseVisualStyleBackColor = true;
+            this.btnIzlaz.Click += new System.EventHandler(this.btnIzlaz_Click);
             // 
             // frmPocetna
             // 
@@ -107,7 +113,7 @@
             this.Controls.Add(this.btnFiltriranje);
             this.Controls.Add(this.btnPregled);
             this.Controls.Add(this.btnUnosZivotinje);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPocetna";
             this.Text = "Početna";
             this.ResumeLayout(false);

@@ -61,5 +61,10 @@ namespace Azil_za_životinje
                     "Kontakt: " + z.Kontakt;
 
         }
+
+        private void btnPovratak_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

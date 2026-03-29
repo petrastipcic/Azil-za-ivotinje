@@ -73,5 +73,10 @@ namespace Azil_za_životinje
             pbOdabir.Image = null;
 
         }
+
+        private void btnPovratak_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -54,6 +54,7 @@
             this.btnOdaberiSliku = new System.Windows.Forms.Button();
             this.cbStatus = new System.Windows.Forms.ComboBox();
             this.OpenFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.btnPovratak = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudDob)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbOdabir)).BeginInit();
             this.SuspendLayout();
@@ -283,11 +284,22 @@
             // 
             this.OpenFileDialog.FileName = "OpenFileDialog";
             // 
+            // btnPovratak
+            // 
+            this.btnPovratak.Location = new System.Drawing.Point(640, 391);
+            this.btnPovratak.Name = "btnPovratak";
+            this.btnPovratak.Size = new System.Drawing.Size(75, 23);
+            this.btnPovratak.TabIndex = 25;
+            this.btnPovratak.Text = "Povratak";
+            this.btnPovratak.UseVisualStyleBackColor = true;
+            this.btnPovratak.Click += new System.EventHandler(this.btnPovratak_Click);
+            // 
             // frmUnosZivotinje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1125, 538);
+            this.ClientSize = new System.Drawing.Size(727, 426);
+            this.Controls.Add(this.btnPovratak);
             this.Controls.Add(this.cbStatus);
             this.Controls.Add(this.btnOdaberiSliku);
             this.Controls.Add(this.btnSpremi);
@@ -350,5 +362,6 @@
         private System.Windows.Forms.Button btnOdaberiSliku;
         private System.Windows.Forms.ComboBox cbStatus;
         private System.Windows.Forms.OpenFileDialog OpenFileDialog;
+        private System.Windows.Forms.Button btnPovratak;
     }
 }

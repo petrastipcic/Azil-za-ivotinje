@@ -84,5 +84,10 @@ namespace Azil_za_životinje
                     lbZivotinje.Items.Add(item);
             }
         }
+
+        private void btnPovratak_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
