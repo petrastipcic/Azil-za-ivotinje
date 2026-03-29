@@ -34,7 +34,7 @@ namespace Azil_za_životinje
             string filter = cbFilter.Text;
             foreach (var z in lista)
             {
-                if (z.Vrsta == filter || z.Status == filter)
+                if (z.Vrsta == filter || z.Status.StartsWith("U azilu"))
                 {
                     lbRezultati.Items.Add(z.Ime + " (" + z.Vrsta + ")");
 
