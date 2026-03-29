@@ -42,7 +42,7 @@ namespace Azil_za_životinje
                     }
                     pbOdabir.SizeMode = PictureBoxSizeMode.StretchImage;
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     MessageBox.Show("Greška pri učitavanju slike! Molimo Vas da odaberete sliku .jpg formata! ");
                     putanjaSlike = "";

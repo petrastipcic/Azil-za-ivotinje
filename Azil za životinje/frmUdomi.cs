@@ -100,7 +100,7 @@ namespace Azil_za_životinje
                 }
             }
 
-            Datoteka.Spremi(lista);
+            Datoteka.SpremiSve(lista);
             MessageBox.Show("Životinja je uspješno udomljena!");
             UcitajZivotinje();
                 dtpDatumUdomljavanja.Value = DateTime.Today;
