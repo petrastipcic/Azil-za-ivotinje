@@ -65,6 +65,12 @@
     <Compile Include="frmPregledZivotinja.Designer.cs">
       <DependentUpon>frmPregledZivotinja.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmStatistika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStatistika.Designer.cs">
+      <DependentUpon>frmStatistika.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUdomi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPregledZivotinja.resx">
       <DependentUpon>frmPregledZivotinja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStatistika.resx">
+      <DependentUpon>frmStatistika.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUdomi.resx">
       <DependentUpon>frmUdomi.cs</DependentUpon>
